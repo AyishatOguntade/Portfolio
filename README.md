@@ -15,7 +15,7 @@ This repository contains a variety of projects, ranging from coursework assignme
 - 🔐 **Cybersecurity & Networking** – Security scripts and research-based projects  
 
 ## 🚀 How to Use  
-Feel free to explore my code, provide feedback, or suggest improvements! If you find something useful, you're welcome to fork the repo or reach out with any questions.  
+Feel free to explore my code, provide feedback, or suggest improvements! Some of these files require more files to run properly, if you would like to receive these files feel free to email me. If you find something useful, you're welcome to fork the repo or reach out with any questions.  
 
 ## 🤝 Connect With Me  
 - 📧 **Email**: ayishat0624@gmail.com  
