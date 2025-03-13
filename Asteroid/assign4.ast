@@ -1,0 +1,77 @@
+load system io.
+load system math.
+--Ayishat Oguntade
+
+
+-- Problem 1:
+
+function square with input:%list do input@map(lambda with x do return x * x)
+end
+
+--test
+assert((square [-2,0,1,2,3]) == [4,0,1,4,9]).
+assert((square [2,2.5]) == [4, 6.25]).
+assert((square []) == []).
+
+
+-- Problem 2:
+
+function member with (input, m) do
+    input @reduce (lambda with (temp, i) do true if i == m else temp, false)
+end
+
+--test
+assert(member([1,2,3], 2)).
+assert(not member([1,2,3], 5)).
+
+
+--Problem 3:
+
+function average with input do
+    let sum = input @reduce (lambda with (x, y) do return (x + y)).
+    return sum/len(input) if sum is %integer else sum / toreal(len(input)).
+end
+
+--test
+-- get it to work will real numbers
+assert((average [1,2,3]) == 2).
+assert((average [1,2,4]) == 2).
+assert((average [1.0,2.0,4.0]) > 2.333333).
+assert((average [1.0,2.0,4.0]) < 2.333334).
+
+
+-- Problem 4:
+
+function map
+    with a do(lambda with  x do x@map(a)).
+end
+
+--test
+assert((map (lambda with n do n+1) [1,2,3]) == [2,3,4]).
+assert((map len ["Hello", "world"]) == [5,5]).
+let plusone = map (lambda with n do n+1).
+assert((plusone [1,2,3]) == [2,3,4]).
+
+
+-- Extra Credit:
+
+function stripmin with [] do 
+    return [].
+with input do 
+    let min = input @reduce (lambda with (x, y) do return x if x < y else y).
+    return input @filter(lambda with x do return x > min).
+end
+
+
+
+--Test 
+assert((stripmin [1,2,3,1,2,3]) == [2,3,2,3]).
+assert((stripmin ["intel", "amd", "nvidia"]) == ["intel", "nvidia"]).
+assert((stripmin []) == []).
+assert((stripmin [99999999]) == []).
+
+
+-- personal notes 
+--filter returns a new list with everything that passes the test
+--reduce retuens a value 
+--map returns a list of the same size

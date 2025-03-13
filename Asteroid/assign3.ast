@@ -1,0 +1,61 @@
+
+load system io.
+load system math.
+--Ayishat Oguntade
+
+
+-- Problem 1:
+
+function square with [] do
+    return [].
+with [head | tail] do
+    return [head * head | square(tail)].
+end
+
+--test 
+
+let input = [1,2,3].
+let new_list = square(input).
+io@println(new_list).
+assert(new_list == [1,4,9]).
+
+let input1 = [0,-1,-2].
+let new_list1 = square(input1).
+io@println(new_list1).
+assert(new_list1 == [0,1,4]).
+
+
+-- Problem 2:
+
+function member with ([], _) do
+    return false.
+with ([head | tail], m) do
+    return head == m or member(tail,m).
+    
+end
+
+
+-- test
+let l =[1,2,3].
+assert(member(l, 2) == true).
+assert(member(l, 5) == false).
+
+
+--Extra Credit
+
+function sum 
+    with [] do
+    return 0.
+    with[head| tail] do
+        return head + sum(tail).
+end
+
+function average 
+    with [] do
+    return none.
+    with input do
+        return sum(input) / len(input).    
+end
+
+let l = [1,2,3].
+assert(average(l) == 2).

@@ -1,0 +1,31 @@
+load system io.
+
+io@println("Hello World").
+
+-- ex1 
+ for i in 10 to 1 step-1 do 
+    io@println(i).
+
+end
+-- ex2
+load system io.
+load system math.
+
+structure Circle with
+  data center.
+  data radius.
+  function circumference with () do
+    return 2.0 * math@pi * this@radius.
+  end
+  function printcircle with () do
+    io @println ("Circle: ("+tostring(this@center@0)+","+tostring(this@center@1)+") Radius: "+tostring(this@radius)).  
+  end
+end
+let r = 2.0
+let c1 = Circle((1.0,2.0),r).
+let circ = c1@circumference().
+
+assert(circ > 3.0 * 2.0 * r).
+assert(circ < 3.2 *2.0 *r).
+
+io@println("A circle with radius = " + tostring(r) + " has a circumference " +tostring(c1@circumference())).
