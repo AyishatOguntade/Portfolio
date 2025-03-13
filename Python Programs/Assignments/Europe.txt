@@ -1,0 +1,17 @@
+1896;Athens, Greece;Europe
+1900;Paris, France;Europe
+1906;Athens, Greece*;Europe
+1908;London, England;Europe
+1912;Stockholm, Sweden;Europe
+1920;Antwerp, Belgium;Europe
+1924;Paris, France;Europe
+1928;Amsterdam, Holland;Europe
+1936;Berlin, Germany;Europe
+1948;London, England;Europe
+1952;Helsinki, Finland;Europe
+1960;Rome, Italy;Europe
+1972;Munich, Germany;Europe
+1980;Moscow, Russia;Europe
+1992;Barcelona, Spain;Europe
+2004;Athens, Greece;Europe
+2012;London, England;Europe

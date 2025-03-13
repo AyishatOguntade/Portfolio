@@ -1,0 +1,4 @@
+1964;Tokyo, Japan;Asia
+1988;Seoul, South Korea;Asia
+2008;Beijing, China;Asia
+2020;Tokyo, Japan;Asia

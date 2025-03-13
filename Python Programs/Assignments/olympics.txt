@@ -1,0 +1,33 @@
+1896;Athens, Greece;Europe 
+1900;Paris, France;Europe
+1904;St. Louis, Missouri USA;North America
+1906;Athens, Greece*;Europe
+1908;London, England;Europe
+1912;Stockholm, Sweden;Europe
+1916;Not held**;None
+1920;Antwerp, Belgium;Europe
+1924;Paris, France;Europe
+1928;Amsterdam, Holland;Europe
+1932;Los Angeles, California USA;North America
+1936;Berlin, Germany;Europe
+1940;Not held***;None
+1944;Not held***;None
+1948;London, England;Europe
+1952;Helsinki, Finland;Europe
+1956;Melbourne, Australia;Australia
+1960;Rome, Italy;Europe
+1964;Tokyo, Japan;Asia
+1968;Mexico City, Mexico;North America
+1972;Munich, Germany;Europe
+1976;Montreal, Canada;North America
+1980;Moscow, Russia;Europe
+1984;Los Angeles, California USA;North America
+1988;Seoul, South Korea;Asia
+1992;Barcelona, Spain;Europe
+1996;Atlanta, Georgia USA;North America
+2000;Sydney, Australia;Australia
+2004;Athens, Greece;Europe
+2008;Beijing, China;Asia
+2012;London, England;Europe
+2016;Rio de Janeiro, Brazil;South America
+2020;Tokyo, Japan;Asia
